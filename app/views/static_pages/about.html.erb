@@ -1,0 +1,37 @@
+<section>
+	<hr class="soften">
+	<div class="row">
+		<div class="span3">
+			<h2>What the fuck is text shadow? <br/><br/>How do I get it all inner shadow?  <br/><br/>Math Nigga, it's Math my nigga.</h2>
+		</div> <!-- end span3-->
+		<div class="span9">
+			<p>
+			Regular text shadow:
+			</p>
+			<pre>p { <code>text-shadow:</code> 1px 1px 1px #000; }</pre>
+			<p>
+			Multiple shadows:
+			</p>
+			<pre>p { <code>text-shadow:</code> 1px 1px 1px #000, 3px 3px 5px blue; }</pre>
+			<p>
+			The first two values specify the length of the shadow offset. The first value specifies the horizontal distance and the second specifies the vertical distance of the shadow. The third value specifies the blur radius and the last value describes the color of the shadow:
+			</p>
+			<p>
+			1. value = The X-coordinate<br/>
+			2. value = The Y-coordinate<br/>
+			3. value = The blur radius<br/>
+			4. value = The color of the shadow		
+			</p>
+			<p>
+			Using positive numbers as the first two values ends up with placing the shadow to the right of the text horizontally (first value) and placing the shadow below the text vertically (second value).
+			</p>
+			<p>
+			The third value, the blur radius, is an optional value which can be specified but don’t have to. It’s the amount of pixels the text is stretched which causes a blur effect. If you don’t use the third value it is treated as if you specified a blur radius of zero.
+			</p>
+			<p>
+			Also, remember you can use RGBA values for the color, for example, a 40% transparency of white:
+			</p>
+			<pre>p { <code>text-shadow:</code> 0px 2px 2px rgba(255, 255, 255, 0.4); }</pre>
+		</div> <!-- end span9-->
+	</div><!-- /row -->
+</section>

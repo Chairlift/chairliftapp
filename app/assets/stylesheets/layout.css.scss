@@ -1,0 +1,245 @@
+/* R.I.P. MAC DRE
+------------------------- */
+/* Christopher Columbus, Marko Polo, Solano County, Sac and Yolo. All afternoon I got warrants. I drive with no license or insurance. My boy in Florence, Colorado, He a legend like Candy Maldonado. El Dorado drop tha rest! School boy glasses and Fila Fits! BMWs, Merccedes Benzs, Stunna Glasses without the lenses! Spinnin rims, tremendous knock. I almost forgot I got a center shot to that punk rock bitch who made me cum. In ten seconds flat man she dumb. Man she dumb doin it live. Doin' 'bout a buck o' down the 5.  Tools brotha Melly Mel. Hit Thunda Valley, can't you tell? Millions, Skrillions, lots of cars. R&B singers, Movie Stars! Rave music MDMA. Hyphy CR, U and K. I said Rave Music, MDMA! Hyphy CR, and U and K! */
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('BEBAS___-webfont.eot');
+    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEBAS___-webfont.woff') format('woff'),
+         url('BEBAS___-webfont.ttf') format('truetype'),
+         url('BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('entypo-webfont.eot');
+    src: url('entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('entypo-webfont.woff') format('woff'),
+         url('entypo-webfont.ttf') format('truetype'),
+         url('entypo-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RomanCapsRegular';
+    src: url('Roman_SD-webfont.eot');
+    src: url('Roman_SD-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roman_SD-webfont.woff') format('woff'),
+         url('Roman_SD-webfont.ttf') format('truetype'),
+         url('Roman_SD-webfont.svg#RomanCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SeasideResortNFRegular';
+    src: url('SEASRN__-webfont.eot');
+    src: url('SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SEASRN__-webfont.woff') format('woff'),
+         url('SEASRN__-webfont.ttf') format('truetype'),
+         url('SEASRN__-webfont.svg#SeasideResortNFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('Chunkfive-webfont.eot');
+    src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Chunkfive-webfont.woff') format('woff'),
+         url('Chunkfive-webfont.ttf') format('truetype'),
+         url('Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+	background: url(pat_42.png) repeat, rgb(246, 246, 238) url(bg5.jpg) no-repeat center top;
+}
+h1{
+	font: 30px/45px 'ChunkFiveRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 0;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, .45);
+}
+
+/* variables */
+$off-white: #eef1ed;
+$blue1: #a1c9e3;
+$blue2: #88bae1;
+$blue3: #75afe2;
+$blue4: #c2d6e3;
+$themeyellow: #f6f1ad;
+
+/* Mixins */
+@mixin transition {
+	-webkit-transition:all .8s ease;
+	-moz-transition:all .8s ease;
+	-o-transition:all .8s ease;
+	-ms-transition:all .8s ease;	
+	transition:all .8s ease;
+}
+@mixin soft-hr {
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+/* Space out sub-sections more
+-------------------------------------------------- */
+div#topwhitebar {
+	height: 3px;
+	background: $themeyellow;}
+
+/* Faded out hr */
+hr.soften {
+  height: 1px;
+  margin: 54px 0 54px;
+  @include soft-hr;
+}
+hr.softenclose {
+  height: 1px;
+  margin: 5px 0 24px;
+	@include soft-hr;
+}
+/* Header
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+}
+.jumbotron h1 {
+  margin-top: 10px;
+  font: 61px/50px 'ChunkFiveRegular', Arial, sans-serif; letter-spacing: 0;
+  text-shadow: 2px 3px 0 $themeyellow;
+  color: rgba(55, 55, 55, 0.95);
+}
+.jumbotron p {
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.jumbotron .btn-large {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+.jumbotron .btn-large small {
+  font-size: 14px;
+}
+
+/* Masthead (docs home) */
+.masthead {
+  padding-top: 36px;
+  margin-bottom: 1px;
+
+}
+.masthead h1,
+.masthead h4,
+.masthead p {
+  text-align: center;
+}
+.masthead h1 {
+  margin-bottom: 1px;
+}
+.masthead h4 {
+	float: right;
+	padding-right: 44px;
+	font-size: 17px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  	color: #333333;
+}
+.masthead p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* Specific jumbotrons
+------------------------- */
+/* supporting docs pages */
+.subhead {
+  padding-bottom: 0;
+  margin-bottom: 9px;
+}
+.subhead h1 {
+  font-size: 54px;
+}
+.btn-largest {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+/* Some of Home Page Elements
+------------------------- */
+/* All I want to do is party!!! Fat Dank Blunts! Yoking and Dipping! Where we at man? I'm the genie of the lamp. */
+ul.nav-tabs {
+	li.span3 {
+		border: solid 0px white;
+		background-color: transparent;
+	}
+}
+.tab-pane {
+	height: 220px;
+}
+.waytomakespace {
+	margin-top: 130px;
+}
+.waytomakelessspace {
+	margin-top: 60px;
+}
+.cashmoney {
+	font-size: 17px;
+	font-weight: normal;
+	padding-top: 14px;
+	text-align: center;
+	text-shadow: 0px -1px 0px rgba(51, 51, 51, .4);
+	&:hover {
+		text-shadow: 0px -1px 0px rgba(0, 0, 20, .25);	
+	}
+}
+.entypobig {
+  font: 30px 'EntypoRegular'; letter-spacing: 0;
+  text-shadow: 0px -1px 0px rgba(18, 18, 18, .99), 3px 2px 2px rgba(255, 255, 255, 0.3);
+  color: rgba(55, 55, 55, 0.85);
+}
+#thechairlift {
+	margin-top: 15px;
+	margin-left: 40px;	
+	text-align: center;
+	opacity: .6;
+	&:hover {
+		opacity: 1;
+	}
+	@include transition;
+}
+.themeyellow {
+	text-shadow: 0px 1px 0px $themeyellow;
+}
+/* Footer
+------------------------- */
+/* Bounce. Drop. Make it pop. Dolomite. If I was they age I would be they homies!!!! */
+footer {
+  #wolf, #rails, #unicorn, #shark {
+ 		margin: -10px 0 30px;
+  	padding-left: 20px;
+  	padding-top: -20px;
+		opacity: .3;
+		&:hover {
+			opacity: 1;
+		}
+		@include transition;
+  }
+  #logo {
+  	margin: -10px 0 30px;
+		padding-top: -20px;
+		padding-left: 20px
+  }
+}
